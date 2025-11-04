@@ -71,20 +71,6 @@ Demonstrate fundamental SQL concepts including **JOINs**, **GROUP BY**, **aggreg
 Query:
 mysql> select * from accounts where current_balance > 50000;
 
-Answer:
-+----------------+---------------+-----------------+--------------+
-| account_number | customer_name | current_balance | account_type |
-+----------------+---------------+-----------------+--------------+
-|           1001 | Amit Shah     |           58500 | savings      |
-|           1002 | Priya Mehta   |           77000 | current      |
-|           1004 | Sneha Patil   |           63200 | current      |
-|           1005 | Karan Desai   |           54500 | savings      |
-|           1006 | Neha Gupta    |           97000 | current      |
-|           1008 | Pooja Nair    |           69000 | current      |
-|           1009 | Vikas Singh   |           58300 | savings      |
-+----------------+---------------+-----------------+--------------+
-7 rows in set (0.00 sec)
-
 <img src="images/Query_1.png" alt="q1" width="250"/> &nbsp;
 
 ---
@@ -92,75 +78,126 @@ Answer:
 ### Q2. Display all customers having **SAVINGS** accounts  
 <img src="images/Query_2.png" alt="q2" width="250"/> &nbsp;
 
+Query:
+mysql> select account_number, customer_name, account_type from accounts where account_type = 'savings';
+
 ---
 
 ### Q3. List all transactions made in the current month  
 <img src="images/Query_3.png" alt="q3" width="250"/> &nbsp;
+
+Query:
+mysql> select * from transactions where month(date_time) = month(curdate());
 
 ---
 
 ### Q4. Show customers who have not made any transactions yet  
 <img src="images/Query_4_%26_5.png" alt="q4" width="250"/> &nbsp;
 
+Query:
+mysql> select * from accounts where account_number not in (select distinct account_number from transactions);
+
 ---
 
 ### Q5. Customers who have not made any **withdrawal** transactions  
 <img src="images/Query_4_%26_5.png" alt="q5" width="250"/> &nbsp;
+
+Query:
+mysql> select * from accounts where account_number not in (select distinct account_number from transactions where transaction_type = 'withdraw');
 
 ---
 
 ### Q6. Display the **top 3 customers** with the highest account balance  
 <img src="images/Query_6.png" alt="q6" width="250"/> &nbsp;
 
+Query:
+mysql> select * from accounts order by current_balance desc limit 3;
+
 ---
 
 ### Q7. Retrieve all transactions where the amount is greater than 10,000  
 <img src="images/Query_7.png" alt="q7" width="250"/> &nbsp;
+
+Query:
+mysql> select * from transactions where amount > 10000;
 
 ---
 
 ### Q8. Show the **total combined balance** of all accounts  
 <img src="images/Query_8.png" alt="q8" width="250"/> &nbsp;
 
+Query:
+mysql> select sum(current_balance) as Total_Combined_Balance from accounts;
+
 ---
 
 ### Q9. List customers along with their **total deposited amount**  
 <img src="images/Query_9.png" alt="q9" width="250"/> &nbsp;
+
+Query:
+mysql> SELECT customer_name, sum(transactions.amount) AS Total_Deposited_Amount FROM accounts JOIN transactions ON accounts.account_number = transactions.account_number WHERE transaction_type = 'deposit' GROUP BY customer_name;
 
 ---
 
 ### Q10. Find customers who made a **withdrawal of more than 5,000**  
 <img src="images/Query_10.png" alt="q10" width="250"/> &nbsp;
 
+Query:
+mysql> SELECT accounts.account_number, customer_name, account_type, trans_id, transaction_type, amount FROM accounts INNER JOIN transactions ON accounts.account_number = transactions.account_number WHERE transaction_type = 'withdraw' and amount > 5000;
+
 ---
 
 ### Q11. Display the **most recent transaction date** for each account  
 <img src="images/Query_11.png" alt="q11" width="250"/> &nbsp;
+
+Query 1:
+mysql> select account_number, max(date_time) as Recent_Transaction_Date from transactions group by account_number 
+order by Recent_Transaction_Date desc;
+
+Query 2:
+mysql> select transactions.account_number, customer_name, max(date_time) as Recent_Transaction_Date from transactions join accounts 
+on transactions.account_number = accounts.account_number group by account_number order by Recent_Transaction_Date desc;
 
 ---
 
 ### Q12. Retrieve the **number of transactions** each customer has made  
 <img src="images/Query_12.png" alt="q12" width="250"/> &nbsp;
 
+Query:
+mysql> select distinct accounts.account_number, customer_name, count(transactions.account_number) as Number_Of_Transactions 
+from transactions join accounts on transactions.account_number = accounts.account_number group by accounts.account_number, customer_name;
+
 ---
 
 ### Q13. List customers who have both **SAVINGS** and **CURRENT** accounts  
 <img src="images/Query_13_%26_14.png" alt="q13" width="250" />&nbsp;
+
+Query:
+mysql> select * from accounts where account_type = 'savings' and account_type = 'current';
 
 ---
 
 ### Q14. Find accounts created by customers whose name starts with ‘P’  
 <img src="images/Query_13_%26_14.png" alt="q14" width="250" />&nbsp;
 
+Query:
+mysql> select * from accounts where customer_name like 'P%';
+
 ---
 
 ### Q15. Retrieve customers sorted by their account balance (descending order)  
 <img src="images/Query_15.png" alt="q15" width="250"/> &nbsp;
 
+Query:
+mysql> select * from accounts order by current_balance desc;
+
 ---
 
 ### Q16. Display the **average account balance per account type**  
 <img src="images/Query_16.png" alt="q16" width="250"/> &nbsp;
+
+Query:
+mysql> select distinct account_type as Type_Of_Account, avg(current_balance) as Average_Account_Balance from accounts group by account_type;
 
 ---
 
