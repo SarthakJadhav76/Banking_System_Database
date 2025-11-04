@@ -72,57 +72,57 @@ Demonstrate fundamental SQL concepts including **JOINs**, **GROUP BY**, **aggreg
 ---
 
 ### Q2. Display all customers having **SAVINGS** accounts  
-<img src="images/q2.png" alt="q2" width="250"/> &nbsp;
+<img src="images/Query_2.png" alt="q2" width="250"/> &nbsp;
 
 ---
 
 ### Q3. List all transactions made in the current month  
-<img src="images/q3.png" alt="q3" width="250"/> &nbsp;
+<img src="images/Query_3.png" alt="q3" width="250"/> &nbsp;
 
 ---
 
 ### Q4. Show customers who have not made any transactions yet  
-<img src="images/q4.png" alt="q4" width="250"/> &nbsp;
+<img src="images/Query_4.png" alt="q4" width="250"/> &nbsp;
 
 ---
 
 ### Q5. Customers who have not made any **withdrawal** transactions  
-<img src="images/q5.png" alt="q5" width="250"/> &nbsp;
+<img src="images/Query_5.png" alt="q5" width="250"/> &nbsp;
 
 ---
 
 ### Q6. Display the **top 3 customers** with the highest account balance  
-<img src="images/q6.png" alt="q6" width="250"/> &nbsp;
+<img src="images/Query_6.png" alt="q6" width="250"/> &nbsp;
 
 ---
 
 ### Q7. Retrieve all transactions where the amount is greater than 10,000  
-<img src="images/q7.png" alt="q7" width="250"/> &nbsp;
+<img src="images/Query_7.png" alt="q7" width="250"/> &nbsp;
 
 ---
 
 ### Q8. Show the **total combined balance** of all accounts  
-<img src="images/q8.png" alt="q8" width="250"/> &nbsp;
+<img src="images/Query_8.png" alt="q8" width="250"/> &nbsp;
 
 ---
 
 ### Q9. List customers along with their **total deposited amount**  
-<img src="images/q9.png" alt="q9" width="250"/> &nbsp;
+<img src="images/Query_9.png" alt="q9" width="250"/> &nbsp;
 
 ---
 
 ### Q10. Find customers who made a **withdrawal of more than 5,000**  
-<img src="images/q10.png" alt="q10" width="250"/> &nbsp;
+<img src="images/Query_10.png" alt="q10" width="250"/> &nbsp;
 
 ---
 
 ### Q11. Display the **most recent transaction date** for each account  
-<img src="images/q11.png" alt="q11" width="250"/> &nbsp;
+<img src="images/Query_11.png" alt="q11" width="250"/> &nbsp;
 
 ---
 
 ### Q12. Retrieve the **number of transactions** each customer has made  
-<img src="images/q12.png" alt="q12" width="250"/> &nbsp;
+<img src="images/Query_12.png" alt="q12" width="250"/> &nbsp;
 
 ---
 
