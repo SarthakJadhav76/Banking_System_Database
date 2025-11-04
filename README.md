@@ -34,7 +34,6 @@ Demonstrate fundamental SQL concepts including **JOINs**, **GROUP BY**, **aggreg
 
 - **MySQL** – Database Management System  
 - **SQL** – Query Language for data manipulation  
-- **Workbench / CLI** – For query execution and visualization  
 
 ---
 
