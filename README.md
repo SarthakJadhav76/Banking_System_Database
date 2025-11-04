@@ -82,12 +82,12 @@ Demonstrate fundamental SQL concepts including **JOINs**, **GROUP BY**, **aggreg
 ---
 
 ### Q4. Show customers who have not made any transactions yet  
-<img src="images/Query_4.png" alt="q4" width="250"/> &nbsp;
+<img src="images/Query_4_%26_5.png" alt="q4" width="250"/> &nbsp;
 
 ---
 
 ### Q5. Customers who have not made any **withdrawal** transactions  
-<img src="images/Query_5.png" alt="q5" width="250"/> &nbsp;
+<img src="images/Query_4_%26_5.png" alt="q5" width="250"/> &nbsp;
 
 ---
 
