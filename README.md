@@ -67,6 +67,24 @@ Demonstrate fundamental SQL concepts including **JOINs**, **GROUP BY**, **aggreg
 ## SQL Query Tasks
 
 ### Q1. Retrieve all customer names who have a balance greater than 50,000  
+
+Query:
+mysql> select * from accounts where current_balance > 50000;
+
+Answer:
++----------------+---------------+-----------------+--------------+
+| account_number | customer_name | current_balance | account_type |
++----------------+---------------+-----------------+--------------+
+|           1001 | Amit Shah     |           58500 | savings      |
+|           1002 | Priya Mehta   |           77000 | current      |
+|           1004 | Sneha Patil   |           63200 | current      |
+|           1005 | Karan Desai   |           54500 | savings      |
+|           1006 | Neha Gupta    |           97000 | current      |
+|           1008 | Pooja Nair    |           69000 | current      |
+|           1009 | Vikas Singh   |           58300 | savings      |
++----------------+---------------+-----------------+--------------+
+7 rows in set (0.00 sec)
+
 <img src="images/Query_1.png" alt="q1" width="250"/> &nbsp;
 
 ---
