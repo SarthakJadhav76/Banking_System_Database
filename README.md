@@ -93,10 +93,11 @@ mysql> select * from transactions where month(date_time) = month(curdate());
 ---
 
 ### Q4. Show customers who have not made any transactions yet
-<img src="images/Query_4_%26_5.png" alt="q4" width="250"/> &nbsp;
 
 Query:
 mysql> select * from accounts where account_number not in (select distinct account_number from transactions);
+
+<img src="images/Query_4_%26_5.png" alt="q4" width="250"/> &nbsp;
 
 ---
 
