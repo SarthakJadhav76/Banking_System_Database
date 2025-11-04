@@ -59,11 +59,6 @@ Demonstrate fundamental SQL concepts including **JOINs**, **GROUP BY**, **aggreg
 
 ---
 
-## ER Diagram
-<img src="image/er_diagram.png" alt="er_diagram" width="400"/> &nbsp;
-
----
-
 ## Project Results  
 [Click here to get full code](https://github.com/yourusername/banking_system_database/blob/main/banking_database_code.sql)
 
