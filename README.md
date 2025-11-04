@@ -127,16 +127,17 @@ Demonstrate fundamental SQL concepts including **JOINs**, **GROUP BY**, **aggreg
 ---
 
 ### Q13. List customers who have both **SAVINGS** and **CURRENT** accounts  
-<img src="images/q13.png" alt="q13" width="250"/> &nbsp;
+<img src="images/Query_13_%26_14.png" alt="q13" width="250" />&nbsp;
 
 ---
 
 ### Q14. Find accounts created by customers whose name starts with ‘P’  
+<img src="images/Query_13_%26_14.png" alt="q14" width="250" />&nbsp;
 
 ---
 
 ### Q15. Retrieve customers sorted by their account balance (descending order)  
-<img src="images/Query_14_&_15.png" alt="q15" width="250"/> &nbsp;
+<img src="images/Query_15.png" alt="q15" width="250"/> &nbsp;
 
 ---
 
