@@ -72,77 +72,76 @@ Demonstrate fundamental SQL concepts including **JOINs**, **GROUP BY**, **aggreg
 ---
 
 ### Q2. Display all customers having **SAVINGS** accounts  
-<img src="image/q2.png" alt="q2" width="250"/> &nbsp;
+<img src="images/q2.png" alt="q2" width="250"/> &nbsp;
 
 ---
 
 ### Q3. List all transactions made in the current month  
-<img src="image/q3.png" alt="q3" width="250"/> &nbsp;
+<img src="images/q3.png" alt="q3" width="250"/> &nbsp;
 
 ---
 
 ### Q4. Show customers who have not made any transactions yet  
-<img src="image/q4.png" alt="q4" width="250"/> &nbsp;
+<img src="images/q4.png" alt="q4" width="250"/> &nbsp;
 
 ---
 
 ### Q5. Customers who have not made any **withdrawal** transactions  
-<img src="image/q5.png" alt="q5" width="250"/> &nbsp;
+<img src="images/q5.png" alt="q5" width="250"/> &nbsp;
 
 ---
 
 ### Q6. Display the **top 3 customers** with the highest account balance  
-<img src="image/q6.png" alt="q6" width="250"/> &nbsp;
+<img src="images/q6.png" alt="q6" width="250"/> &nbsp;
 
 ---
 
 ### Q7. Retrieve all transactions where the amount is greater than 10,000  
-<img src="image/q7.png" alt="q7" width="250"/> &nbsp;
+<img src="images/q7.png" alt="q7" width="250"/> &nbsp;
 
 ---
 
 ### Q8. Show the **total combined balance** of all accounts  
-<img src="image/q8.png" alt="q8" width="250"/> &nbsp;
+<img src="images/q8.png" alt="q8" width="250"/> &nbsp;
 
 ---
 
 ### Q9. List customers along with their **total deposited amount**  
-<img src="image/q9.png" alt="q9" width="250"/> &nbsp;
+<img src="images/q9.png" alt="q9" width="250"/> &nbsp;
 
 ---
 
 ### Q10. Find customers who made a **withdrawal of more than 5,000**  
-<img src="image/q10.png" alt="q10" width="250"/> &nbsp;
+<img src="images/q10.png" alt="q10" width="250"/> &nbsp;
 
 ---
 
 ### Q11. Display the **most recent transaction date** for each account  
-<img src="image/q11.png" alt="q11" width="250"/> &nbsp;
+<img src="images/q11.png" alt="q11" width="250"/> &nbsp;
 
 ---
 
 ### Q12. Retrieve the **number of transactions** each customer has made  
-<img src="image/q12.png" alt="q12" width="250"/> &nbsp;
+<img src="images/q12.png" alt="q12" width="250"/> &nbsp;
 
 ---
 
 ### Q13. List customers who have both **SAVINGS** and **CURRENT** accounts  
-<img src="image/q13.png" alt="q13" width="250"/> &nbsp;
+<img src="images/q13.png" alt="q13" width="250"/> &nbsp;
 
 ---
 
 ### Q14. Find accounts created by customers whose name starts with ‘P’  
-<img src="image/q14.png" alt="q14" width="250"/> &nbsp;
 
 ---
 
 ### Q15. Retrieve customers sorted by their account balance (descending order)  
-<img src="image/q15.png" alt="q15" width="250"/> &nbsp;
+<img src="images/Query_14_&_15.png" alt="q15" width="250"/> &nbsp;
 
 ---
 
 ### Q16. Display the **average account balance per account type**  
-<img src="image/q16.png" alt="q16" width="250"/> &nbsp;
+<img src="images/Query_16.png" alt="q16" width="250"/> &nbsp;
 
 ---
 
