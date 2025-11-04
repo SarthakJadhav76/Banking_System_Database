@@ -67,7 +67,7 @@ Demonstrate fundamental SQL concepts including **JOINs**, **GROUP BY**, **aggreg
 ## SQL Query Tasks
 
 ### Q1. Retrieve all customer names who have a balance greater than 50,000  
-<img src="image/Query_1.png" alt="q1" width="250"/> &nbsp;
+<img src="images/Query_1.png" alt="q1" width="250"/> &nbsp;
 
 ---
 
